@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage with Sections</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            background-color: #eee;
+            padding: 10px;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-gap: 10px;
+        }
+        .menu-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .menu-item {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to My Website</h1>
+</header>
+
+<nav>
+    <a href="#home">Home</a> |
+    <a href="#gallery">Gallery</a> |
+    <a href="#menu">Menu</a>
+</nav>
+
+<section id="home">
+    <h2>Home</h2>
+    <p>Welcome to my website! Surf in one of the most sphisticated website in the world.</p>
+    <a href="https://images.app.goo.gl/phKG382oiviYvYWr8" target="_blank">
+        <img src="technologyimage.jpg" alt="Technology Image" width="200" height="200">
+    </a>
+</section>
+
+<section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+        <a href="https://images.app.goo.gl/edrBh5k7TmjcU6oA8" target="_blank"> <img src="natureimage1.jpg" alt="Nature Image 1" width="200" height="200">Nature image 1</a>
+        <a href="https://images.app.goo.gl/rboq7aJYXWf6gdxY7" target="_blank"><img src="natureimage2.jpg" alt="Nature Image 2" width="200" height="200">Nature image 2</a>
+        <a href="https://images.app.goo.gl/8WvCLFSMRbHHycwUA" target="_blank"> <img src="natureimage3.jpg" alt="Nature Image 3" width="200" height="200">Nature image 3</a>
+    </div>
+</section>
+
+<section id="menu">
+    <h2>Menu</h2>
+    <ul class="menu-list">
+        <li class="menu-item"><a href="https://images.app.goo.gl/K9zYK2CeT8aUbbPJ7" target="_blank"> <img src="foodimage1.jpg" alt="Food Image 1" width="200" height="200"> Food Item 1</a></li>
+        <li class="menu-item"><a href="https://images.app.goo.gl/VUCztpoLY7XFMHQd8" target="_blank"><img src="foodimage2.jpg" alt="Food Image 2" width="200" height="200"> Food Item 2</a></li>
+        <li class="menu-item"><a href="https://pin.it/SVVEYENsj" target="_blank"><img src="foodimage3.jpg" alt="Food Image 3" width="200" height="200"> Food Item 3</a></li>
+    </ul>
+</section>
+
+</body>
+</html>
